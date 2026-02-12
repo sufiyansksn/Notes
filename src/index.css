@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notes-list{
+  display:grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note.new{
+  background: #FFDAB9;
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background: #FFDAB9;
+}
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: #98FF98;
+  border: none;
+  border-radius: 16px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.note{
+  background-color: #AFEEEE;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000; 
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233,233,233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input{
+  background-color: rgb(233,233,233);
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.dark-mode {
+  background-color: black;
+  min-height: 100vh; /* This ensures the black background covers the full height */
+  transition: background-color 0.5s ease; /* Optional: makes the transition smoother */
+}
+
+
+.dark-mode h1{
+  color: white
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
